@@ -13,14 +13,20 @@ Follow the pattern in /etc/named.conf and /var/named/nrma.iag.zone to add more z
 brew install bind
 
 
-### 2) CHECK YOUR CONFIG
+### 2) EDIT THE CONFIGS
+
+- Edit /var/named/nrma.iag.zone and replace the 192.168.137.95 IP with your own local IP
+- Add any subdomains to the 'IN A' records section at the bottom of the file
+
+
+### 3) CHECK YOUR CONFIG
 
 /usr/local/sbin/named-checkconf /etc/named.conf
 
 /usr/local/sbin/named-checkzone nrma.iag /var/named/nrma.iag.zone
 
 
-### 3) RESTART AFTER ADDING NEW ZONE FILES
+### 4) RESTART AFTER ADDING NEW ZONE FILES
 
 #### Shutdown bind (if it was running)
 launchctl unload /System/Library/LaunchDaemons/org.isc.named.plist
