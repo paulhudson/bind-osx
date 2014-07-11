@@ -57,11 +57,13 @@ You need to set the DNS server on any device you wish to connect to your Mac's l
 
 #### Restart After adding new DNS zone files
 
-##### Shutdown bind (if it was running)
+Shutdown bind (if it was running)
+
 - **launchctl unload /System/Library/LaunchDaemons/org.isc.named.plist**
 
 
-##### Launch BIND and set it to start automatically on system reboot.
+Launch BIND and set it to start automatically on system reboot.
+
 - **launchctl load -wF /System/Library/LaunchDaemons/org.isc.named.plist**
 
 
