@@ -34,10 +34,12 @@ Edit the default zone file and replace every instance of 192.168.137.95 IP with 
 
 #### 3) Check your configs
 
-#####Checks the Bind config
+Checks the Bind config
+
 - **/usr/local/sbin/named-checkconf /etc/named.conf**
 
-#####Check the nrma.iag DNS zone file config
+Check the nrma.iag DNS zone file config
+
 - **/usr/local/sbin/named-checkzone nrma.iag /var/named/nrma.iag.zone**
 
 
