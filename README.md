@@ -10,7 +10,7 @@ Follow the pattern in /etc/named.conf and /var/named/nrma.iag.zone to add more z
 
 #### 1) Use homebrew to install Bind
 
-Install the popular Bind DNS server is homebrew (http://brew.sh/):
+Install the popular Bind DNS server with homebrew (http://brew.sh/):
 
 - **brew install bind**
 
